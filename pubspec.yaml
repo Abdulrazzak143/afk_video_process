@@ -1,0 +1,33 @@
+name: afk_video_process
+description: Offline video-to-text PoC using FFmpeg and sherpa-onnx Whisper.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  sherpa_onnx: ^1.13.6
+  ffmpeg_kit_flutter_new_audio: ^2.5.2
+  file_picker: ^12.1.2
+  path_provider: ^2.1.6
+  dio: ^5.4.0
+  archive: ^4.0.7
+  path: ^1.9.1
+  camera: ^0.12.0+2
+  tflite_flutter: ^0.12.1
+  video_player: ^2.14.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/crack_leakage_model.tflite
+    - assets/labels.txt
+    - assets/sherpa-onnx-whisper-tiny.tar.bz2
